@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>APOD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class ="search">
+    <h1>A Cool Space Picture</h1>
+    <ion-input type="text" id="dateSearch" placeholder="yyyy/mm/dd"></ion-input>
+
+    <ion-button (click)="call()" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button>
+    
+    <p id = "description"></p>
+    <ion-img [src] = "source" id = "spacePic"></ion-img>
+  </div>
+</ion-content>
