@@ -25,3 +25,8 @@ much easier. The original APOD page functionality works, and I am working on two
 
 - Exoplanet Dashboard
     A summary of data collected by NASA on the most recent planet discoveries.
+
+
+### Known Issues
+    -I've noticed during development that the web browser cache doesn't clear sometimes. I'm currently working
+    on a fix but in the mean time if there is an issue, try resetting the browser cache (ctrl + shift + r) 
