@@ -7,16 +7,19 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./apod.page.scss'],
 })
 export class APODPage implements OnInit {
+  date: string = "";
   source: "URL Here";
   constructor() { }
 
 getDate() {
+  console.log("Here is the date: " + document.getElementById('dateSearch').textContent)
   return document.getElementById('dateSearch').textContent;
   }
 
 async call() {
-  const API_KEY = environment.API_KEY;
-  let date = this.getDate();
+  const API_KEY = 'QoyU6I9sKmYnh0O0es7d81lODZIYVf4IgTId7H8J';
+  let date = this.date;
+  console.log(this.date)
   let request = `https://api.nasa.gov/planetary/apod?date=` + date + '&api_key=' + API_KEY;
   await fetch(request).then((response) => {
       return response.json();

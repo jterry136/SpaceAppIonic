@@ -7,7 +7,7 @@
 <ion-content>
   <div class ="search">
     <h1>A Cool Space Picture</h1>
-    <ion-input type="text" id="dateSearch" placeholder="yyyy/mm/dd"></ion-input>
+    <ion-input type="text" [(ngModel)]="date" text-right id="dateSearch" placeholder="yyyy/mm/dd" ></ion-input>
 
     <ion-button (click)="call()" expand="block" fill="clear" shape="round">
       Click me
